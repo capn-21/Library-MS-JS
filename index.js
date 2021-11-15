@@ -14,8 +14,16 @@ function Display(){
 
 }
 
-Display.prototype.add=function(){
+Display.prototype.add=function(book){
     console.log("adding")
+    tablebody=document.getElementById('tablebody');    
+
+    let uistring=` <tr>
+    <th scope="row">1</th>
+    <td>Mark</td>
+    <td>Otto</td>
+    <td>@mdo</td>
+  </tr>`
 }
 
 Display.prototype.clear=function(){
