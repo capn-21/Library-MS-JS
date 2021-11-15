@@ -18,12 +18,15 @@ Display.prototype.add=function(book){
     console.log("adding")
     tablebody=document.getElementById('tablebody');    
 
-    let uistring=` <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
+    let uistring=` 
+    <tr>
+
+    <td>${book.name}</td>
+    <td>${book.author}</td>
+    <td>${book.genre}</td>
   </tr>`
+
+  tablebody.innerHTML +=uistring;
 }
 
 Display.prototype.clear=function(){
