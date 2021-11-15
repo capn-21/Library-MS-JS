@@ -59,7 +59,7 @@ let genre;
     else if(education.checked){
         genre=education.value;
     }
-    else if(Poetry,checked){
+    else if(Poetry.checked){
         genre=Poetry.value;
     }
 
@@ -69,8 +69,19 @@ let genre;
    
 
     let display =new Display();
+
+    if(display.validate(book)){
     display.add(book);
     display.clear();
+    display.show('Succes')
+
+    }else{
+        //show error
+        display.show('eoor');
+    };
+        
+
+   
    
   
 }
